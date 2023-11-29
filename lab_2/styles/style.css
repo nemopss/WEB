@@ -19,6 +19,11 @@ body div {
     background-size: cover;
 }
 
+.title {
+    transition: color 0.5;
+    color: cyan;
+}
+
 .main-menu {
     font-size: 25px;
     font-weight: bold;
@@ -42,7 +47,7 @@ body div {
 
 .navigation:hover{
     transition: color 0.5;
-    color:chartreuse;
+    color:cyan;
 }
 .bton:hover{
     transition: border-color 0.5s, background-color 0.5s;
