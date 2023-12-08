@@ -54,7 +54,7 @@ $pageTitle = 'Форма обратной связи';
                 ?></a>
 
                 <a href="<?php
-                    $name='Главная';
+                    $name='Фотография с сюрпризом';
                     $link='index.php';
                     $current_page=false;
                     echo $link;
@@ -121,8 +121,8 @@ $pageTitle = 'Форма обратной связи';
     </div>
     <footer class="footer">
         <p class="container">
-            &copy; Авторское право данного сайта закрепляется за Гладилиным Алексеем Алексеевичем с 24.11.2023 
-            Сформировано в <?php echo date('d.m.Y');?> <?php echo date('H:i:s');?>
+            &copy; Авторское право данного сайта закрепляется за Гладилиным Алексеем Алексеевичем с 24.11.2023.
+            Сформировано в <?php echo date('d.m.Y');?> <?php echo date('H:i:s');?>.
         </p>
     </footer>
 </body>

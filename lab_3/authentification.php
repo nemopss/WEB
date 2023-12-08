@@ -1,12 +1,17 @@
+<?php
+$pageTitle = 'Форма обратной связи';
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Аутентификация</title>
+    <title><?php echo $pageTitle ?></title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <?php date_default_timezone_set('Europe/Moscow');?>
 </head>
 
 <body class="body-auth">
@@ -49,7 +54,7 @@
                 ?></a>
 
                 <a href="<?php
-                    $name='Главная';
+                    $name='Фотография с сюрпризом';
                     $link='index.php';
                     $current_page=false;
                     echo $link;
@@ -65,7 +70,7 @@
             </nav>
         </div>
     </header>
-    <h1>Аутентификация</h1>
+    <h1><?php echo $pageTitle?></h1>
     <div class="container">
         <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
             <div class="form-group">
@@ -88,10 +93,10 @@
     </div>
     <footer class="footer">
         <p class="container">
-            &copy; Авторское право данного сайта закрепляется за Гладилиным Алексеем Алексеевичем с 24.11.2023
+            &copy; Авторское право данного сайта закрепляется за Гладилиным Алексеем Алексеевичем с 24.11.2023.
             Сформировано в <?php
             date_default_timezone_set('Europe/Moscow');
-            echo date('d.m.Y');?> <?php echo date('H:i:s');?>
+            echo date('d.m.Y');?> <?php echo date('H:i:s');?>.
         </p>
     </footer>
 </body>
