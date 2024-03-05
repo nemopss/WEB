@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles/style.css">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Text Analyzer</title>
+    <style>
+        .result {
+            font-style: italic;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body class="body">
+
+    <header class="header">
+        <nav>
+            <ul class="text">
+                Введите текст, который необходимо проанализировать:
+            </ul>
+        </nav>
+    </header>
+
+    <form action="result.php" method="post">
+        <textarea name="inputText" rows="10" cols="50" class="inputText"></textarea><br>
+        <input type="submit" value="Анализировать" class="bton">
+    </form>
+</body>
+
+<footer class="footer">
+    <p class="container">
+        &copy; Авторское право данного сайта закрепляется за Гладилиным Алексеем Алексеевичем с 01.01.1970
+    </p>
+</footer>
+
+</html>

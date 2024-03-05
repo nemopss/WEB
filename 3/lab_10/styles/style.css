@@ -1,0 +1,130 @@
+
+.header {
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+    background-size: cover;
+}
+
+.main-menu {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.main-menu a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.navigation:hover{
+    transition: color 0.5;
+    color:chartreuse;
+}
+
+.container {
+    max-width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.body {
+    margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    align-items: center;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+main p,
+li,table {
+    font-size: 22px;
+    margin: 7px 7px 0px 15px;
+}
+
+.subtitle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    font-size: 30px;
+}
+
+.footer {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    text-align: center;
+    padding: 5px;
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer p {
+    color: grey;
+}
+
+.mail {
+    text-align: center;
+    padding-top: 2px;
+}
+
+.mail a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover{
+    transition: border-color 0.5s, background-color 0.5s;
+    border-color: white;
+    background-color:rgb(0, 0, 0);
+}
+.btn {
+    display: inline-block;
+    font-weight: bold;
+    border: 2px solid azure;
+    background-color: rgb(165, 164, 164);
+    border-radius: 10px;
+    padding: 6px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 40px;
+
+}
+.label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.reply{
+    font-size: 18px;
+}
+
+.bton {
+    display: block;
+    height: 40px;
+    width: 150px;
+    background-color: blue;
+    border: 1px solid aquamarine;
+    border-radius: 5px;
+    font-size: 16px;
+    color: azure;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text{
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+.inputText{
+    margin: 30px;
+}
