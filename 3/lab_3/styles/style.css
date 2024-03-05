@@ -1,0 +1,132 @@
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.catdog {
+  max-width: 80%;
+  height: auto;
+}
+
+body div {
+  color: antiquewhite;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  background-image: url(../images/background.jpeg);
+  background-size: cover;
+}
+
+.title {
+  transition: color 0.5;
+  color: cyan;
+}
+
+.main-menu {
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.main-menu a {
+  color: antiquewhite;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.mail {
+  text-align: center;
+  padding-top: 2px;
+}
+
+.mail a {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+.navigation:hover {
+  transition: color 0.5;
+  color: cyan;
+}
+.bton:hover {
+  transition: border-color 0.5s, background-color 0.5s;
+  border-color: antiquewhite;
+  background-color: rgb(0, 0, 0);
+}
+.bton {
+  display: inline-block;
+  font-weight: bold;
+  border: 2px solid antiquewhite;
+  background-color: rgb(165, 164, 164);
+  border-radius: 10px;
+  padding: 6px;
+}
+
+body {
+  margin: 0px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.body-form {
+  text-align: center;
+  font-size: 25px;
+  background-image: url(../images/background.jpeg);
+  background-size: cover;
+}
+
+.body-auth {
+  text-align: center;
+  font-size: 25px;
+  background-image: url(../images/background.jpeg);
+  background-size: cover;
+}
+
+h1 {
+  font-size: 45px;
+  color: antiquewhite;
+}
+
+input,
+textarea,
+select {
+  font-size: inherit;
+}
+
+.btn {
+  display: block;
+  height: 40px;
+  width: 150px;
+  background-color: blue;
+  border: 1px solid aquamarine;
+  border-radius: 5px;
+  font-size: 20px;
+  color: azure;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: rgb(0, 0, 0);
+  margin-top: auto;
+}
+
+footer p {
+  color: grey;
+}
+.container {
+  max-width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}

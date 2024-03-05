@@ -9,19 +9,21 @@
 }
 
 body div {
-    color: antiquewhite;
+    color: aliceblue;
 }
 
 .header {
     background-color: rgb(0, 0, 0);
     color: white;
-    background-image: url(../images/background.jpeg);
     background-size: cover;
 }
 
-.title {
-    transition: color 0.5;
-    color: cyan;
+.navigation {
+    color: white;
+}
+
+.selected_menu {
+    color: aqua;
 }
 
 .main-menu {
@@ -31,33 +33,37 @@ body div {
 }
 
 .main-menu a {
-    color: antiquewhite;
     text-decoration: none;
     margin-right: 20px;
 }
+
 .mail {
     text-align: center;
     padding-top: 2px;
 }
 
 .mail a {
-    color: antiquewhite;
+    color: white;
     text-decoration: none;
 }
 
-.navigation:hover{
+.navigation:hover {
     transition: color 0.5;
-    color:cyan;
+    color: chartreuse;
 }
-.bton:hover{
+
+.bton:hover {
     transition: border-color 0.5s, background-color 0.5s;
-    border-color: antiquewhite;
-    background-color:rgb(0, 0, 0);
+    border-color: white;
+    background-color: rgb(0, 0, 0);
 }
+
 .bton {
+    text-decoration: none;
+    color:aliceblue;
     display: inline-block;
     font-weight: bold;
-    border: 2px solid antiquewhite;
+    border: 2px solid azure;
     background-color: rgb(165, 164, 164);
     border-radius: 10px;
     padding: 6px;
@@ -71,20 +77,12 @@ body {
 .body-form {
     text-align: center;
     font-size: 25px;
-    background-image: url(../images/background.jpeg);
-    background-size: cover;
-}
 
-.body-auth {
-    text-align: center;
-    font-size: 25px;
-    background-image: url(../images/background.jpeg);
-    background-size: cover;
 }
 
 h1 {
     font-size: 45px;
-    color:antiquewhite;
+    color: aliceblue;
 }
 
 input,
@@ -114,8 +112,22 @@ select {
 footer p {
     color: grey;
 }
+
 .container {
     max-width: 75%;
     margin: 0 auto;
     text-align: center;
 }
+
+.request_section {
+
+    color: black;
+    background-size: cover;
+
+}
+
+img.image1 {
+    width: 700px;
+    margin: 5px 20%;
+}
+

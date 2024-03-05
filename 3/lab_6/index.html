@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head class="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <title>Главная страница</title>
+</head>
+
+<body class="body">
+    <main>
+        <noscript> Включите JavaScript чтобы все функции работали корректно</noscript>
+        <form id="form" onsubmit="return checkForm(this)" method="post">
+            <label class="label" for="f1Number">Функция 1: Возведение в степень</label>
+            <br>
+            <input id="f1Number" type="number" name="f1Number1" placeholder="Введите первое число" required>
+            <input id="f1Number" type="number" name="f1Number2" placeholder="Введите второе число" required>
+            <p id="f1reply" class="reply"></p>
+            <label class="label" for="email">Функция 2: Нахождение НОД</label>
+            <br>
+            <input id="f1Number" type="number" name="f2Number1" placeholder="Введите первое число" required>
+            <input id="f1Number" type="number" name="f2Number2" placeholder="Введите второе число" required>
+            <p id="f2reply" class="reply"></p>
+            <label class="label" for="email">Функция 3: Наименьшая цифра</label>
+            <br>
+            <input id="f1Number" type="number" name="f3Number" placeholder="Введите первое число" required>
+            <p id="f3reply" class="reply"></p>
+            <label class="label" for="email">Функция 4: Pluralization</label>
+            <br>
+            <input id="f1Number" type="number" name="f4Number" placeholder="Введите первое число" required>
+            <p id="f4reply" class="reply"></p>
+            <label class="label" for="email">Функция 5: Числа Фибоначчи</label>
+            <br>
+            <input id="f1Number" type="number" name="f5Number" placeholder="Введите первое число" required>
+            <p id="f5reply" class="reply"></p>
+            <input class="bton" type="submit" value="Получить ответы">
+        </form>
+        <script src="script/main.js"></script>
+    </main>
+    <footer class="footer">
+        <p class="container">
+            &copy; Авторское право данного сайта закрепляется за Гладилиным Алексеем Алексеевичем с 01.01.1970
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -8,10 +8,12 @@ $pageTitle = 'Форма обратной связи';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $pageTitle ?></title>
+    <title>
+        <?php echo $pageTitle ?>
+    </title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <?php date_default_timezone_set('Europe/Moscow');?>
+    <?php date_default_timezone_set('Europe/Moscow'); ?>
 </head>
 
 <body class="body-auth">
@@ -24,53 +26,61 @@ $pageTitle = 'Форма обратной связи';
             <nav class="main-menu">
                 <a class="title" href="">Моя страница</a>
                 <a href="<?php
-                    $name='Аутентификация';
-                    $link='authentification.php';
-                    $current_page=false;
-                    echo $link;
-                    
+                $name = 'Аутентификация';
+                $link = 'authentification.php';
+                $current_page = false;
+                echo $link;
+
                 ?>" class="<?php
-                    if($current_page)
-                        echo 'selected_menu';
-                    else
-                        echo 'navigation';
-                ?>"><?php
+                if ($current_page)
+                    echo 'selected_menu';
+                else
+                    echo 'navigation';
+                ?>">
+                    <?php
                     echo $name;
-                ?></a>
+                    ?>
+                </a>
 
                 <a href="<?php
-                    $name='Обратная связь';
-                    $link='feedback.php';
-                    $current_page=true;
-                    echo $link;
-                    
+                $name = 'Обратная связь';
+                $link = 'feedback.php';
+                $current_page = true;
+                echo $link;
+
                 ?>" class="<?php
-                    if($current_page)
-                        echo 'selected_menu';
-                    else
-                        echo 'navigation';
-                ?>"><?php
+                if ($current_page)
+                    echo 'selected_menu';
+                else
+                    echo 'navigation';
+                ?>">
+                    <?php
                     echo $name;
-                ?></a>
+                    ?>
+                </a>
 
                 <a href="<?php
-                    $name='Фотография с сюрпризом';
-                    $link='index.php';
-                    $current_page=false;
-                    echo $link;
-                    
+                $name = 'Фотография с сюрпризом';
+                $link = 'index.php';
+                $current_page = false;
+                echo $link;
+
                 ?>" class="<?php
-                    if($current_page)
-                        echo 'selected_menu';
-                    else
-                        echo 'navigation';
-                ?>"><?php
+                if ($current_page)
+                    echo 'selected_menu';
+                else
+                    echo 'navigation';
+                ?>">
+                    <?php
                     echo $name;
-                ?></a>
+                    ?>
+                </a>
             </nav>
         </div>
     </header>
-    <h1><?php echo $pageTitle?></h1>
+    <h1>
+        <?php echo $pageTitle ?>
+    </h1>
     <div class="container">
         <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
             <div class="form-group">
@@ -94,9 +104,11 @@ $pageTitle = 'Форма обратной связи';
     <footer class="footer">
         <p class="container">
             &copy; Авторское право данного сайта закрепляется за Гладилиным Алексеем Алексеевичем с 24.11.2023.
-            Сформировано в <?php
+            Сформировано в
+            <?php
             date_default_timezone_set('Europe/Moscow');
-            echo date('d.m.Y');?> <?php echo date('H:i:s');?>.
+            echo date('d.m.Y'); ?>
+            <?php echo date('H:i:s'); ?>.
         </p>
     </footer>
 </body>

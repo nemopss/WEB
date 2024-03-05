@@ -8,10 +8,12 @@ $pageTitle = 'Форма обратной связи';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $pageTitle ?></title>
+    <title>
+        <?php echo $pageTitle ?>
+    </title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <?php date_default_timezone_set('Europe/Moscow');?>
+    <?php date_default_timezone_set('Europe/Moscow'); ?>
 </head>
 
 <body class="body-form">
@@ -24,53 +26,61 @@ $pageTitle = 'Форма обратной связи';
             <nav class="main-menu">
                 <a class="title" href="">Моя страница</a>
                 <a href="<?php
-                    $name='Аутентификация';
-                    $link='authentification.php';
-                    $current_page=false;
-                    echo $link;
-                    
+                $name = 'Аутентификация';
+                $link = 'authentification.php';
+                $current_page = false;
+                echo $link;
+
                 ?>" class="<?php
-                    if($current_page)
-                        echo 'selected_menu';
-                    else
-                        echo 'navigation';
-                ?>"><?php
+                if ($current_page)
+                    echo 'selected_menu';
+                else
+                    echo 'navigation';
+                ?>">
+                    <?php
                     echo $name;
-                ?></a>
+                    ?>
+                </a>
 
                 <a href="<?php
-                    $name='Обратная связь';
-                    $link='feedback.php';
-                    $current_page=true;
-                    echo $link;
-                    
+                $name = 'Обратная связь';
+                $link = 'feedback.php';
+                $current_page = true;
+                echo $link;
+
                 ?>" class="<?php
-                    if($current_page)
-                        echo 'selected_menu';
-                    else
-                        echo 'navigation';
-                ?>"><?php
+                if ($current_page)
+                    echo 'selected_menu';
+                else
+                    echo 'navigation';
+                ?>">
+                    <?php
                     echo $name;
-                ?></a>
+                    ?>
+                </a>
 
                 <a href="<?php
-                    $name='Фотография с сюрпризом';
-                    $link='index.php';
-                    $current_page=false;
-                    echo $link;
-                    
+                $name = 'Фотография с сюрпризом';
+                $link = 'index.php';
+                $current_page = false;
+                echo $link;
+
                 ?>" class="<?php
-                    if($current_page)
-                        echo 'selected_menu';
-                    else
-                        echo 'navigation';
-                ?>"><?php
+                if ($current_page)
+                    echo 'selected_menu';
+                else
+                    echo 'navigation';
+                ?>">
+                    <?php
                     echo $name;
-                ?></a>
+                    ?>
+                </a>
             </nav>
         </div>
     </header>
-    <h1><?php echo $pageTitle?></h1>
+    <h1>
+        <?php echo $pageTitle ?>
+    </h1>
     <div class="container">
         <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
             <div class="form-group">
@@ -88,18 +98,28 @@ $pageTitle = 'Форма обратной связи';
                 <p class="form-label">Как вы узнали о нас?</p>
                 <input type="radio" name="source" id="advertising" checked>
                 <label for="advertising">Реклама</label>
-
                 <input type="radio" name="source" id="friends">
                 <label for="friends">Рассказали знакомые</label>
             </div>
 
             <div class="form-group">
-                <label class="form-label" for="category">Категория обращения</label>
-                <select name="category" id="category">
-                    <option value="proposal">Предложение</option>
-                    <option value="grievance">Жалоба</option>
-                </select>
-            </div>
+    <label class="form-label" for="category">Категория обращения</label>
+    <select name="category" id="category">
+        <?php
+        // Ассоциативный массив с категориями и их значениями
+        $categories = array(
+            "proposal" => "Предложение",
+            "grievance" => "Жалоба"
+        );
+
+        // Генерация опций на основе элементов массива
+        foreach ($categories as $value => $label) {
+            echo "<option value=\"$value\">$label</option>";
+        }
+        ?>
+    </select>
+</div>
+
 
             <div class="form-group">
                 <label class="form-label" for="message">Текст сообщения</label>
@@ -122,7 +142,9 @@ $pageTitle = 'Форма обратной связи';
     <footer class="footer">
         <p class="container">
             &copy; Авторское право данного сайта закрепляется за Гладилиным Алексеем Алексеевичем с 24.11.2023.
-            Сформировано в <?php echo date('d.m.Y');?> <?php echo date('H:i:s');?>.
+            Сформировано в
+            <?php echo date('d.m.Y'); ?>
+            <?php echo date('H:i:s'); ?>.
         </p>
     </footer>
 </body>
