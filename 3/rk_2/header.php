@@ -18,6 +18,7 @@
                 <div class="menu">
                     <a href="index.php">Главная</a>
                     <a href="shop.php">Магазин</a>
+                    <a href="gallery.php">Галерея</a>
                 </div>
                 <a href="cart.php">
                     <img src="images/cart.png" alt="Корзина" class="photo" href="cart.php">
