@@ -1,0 +1,38 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    color: aliceblue;
+}
+
+.row1{
+    background-color: #c40b0b;
+    padding-top: 1rem;
+}
+.row2{
+    background-color: #f0f0f1;
+    color: black;
+}
+.text{
+    align-items:center;
+}
+.footer {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: #333;
+    text-align: center;
+
+    position: sticky; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
+.btn {
+    margin-bottom: 20px;
+}
+::placeholder {
+    color: #333;
+}
